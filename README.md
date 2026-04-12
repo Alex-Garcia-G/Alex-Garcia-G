@@ -1,6 +1,6 @@
 # Hi, I'm Alex Garcia
 
-I'm a software engineer focused on AI systems — designing multi-agent pipelines, orchestration layers, and AI-powered developer tooling.
+I'm a software engineer focused on AI systems designing multi-agent pipelines, orchestration layers, and AI-powered developer tooling.
 
 ---
 
@@ -26,7 +26,7 @@ I'm a software engineer focused on AI systems — designing multi-agent pipeline
 
 ## What I'm looking for
 
-Junior software engineering roles — especially anything touching AI systems, developer tooling, or backend infrastructure. I think clearly about system design and I build things that actually work end-to-end.
+Junior software engineering roles especially anything touching AI systems, developer tooling, or backend infrastructure. I think clearly about system design and I build things that actually work end-to-end.
 
 ---
 
