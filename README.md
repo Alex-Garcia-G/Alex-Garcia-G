@@ -32,5 +32,5 @@ Junior software engineering roles — especially anything touching AI systems, d
 
 ## Connect
 
-- **Email:** reach me through GitHub
+- **Email:** wheelergarciaa@gmail.com
 - **Live project:** [ai-code-review-pipeline-production.up.railway.app](https://ai-code-review-pipeline-production.up.railway.app)
