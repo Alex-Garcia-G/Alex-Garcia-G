@@ -1,47 +1,39 @@
-# Hi, I'm Alex Garcia
+# Alex Garcia
 
-I'm a software engineer focused on AI systems — designing multi-agent pipelines, orchestration layers, and AI-powered developer tooling.
+Full-stack software engineer focused on AI systems, multi-agent pipelines, and developer tooling. I build end-to-end products using TypeScript, React, Node.js, and the Anthropic Claude API.
 
----
+Currently seeking junior software engineering roles — particularly in AI systems, developer tools, or backend architecture.
 
-## What I'm building
-
-**[AI Code Review Pipeline](https://github.com/Alex-Garcia-G/ai-code-review-pipeline)** — A multi-agent system that reviews pull requests like a senior engineer. Four specialized Claude AI agents work in a coordinated pipeline: one plans the review, two analyze code in parallel (logic + security), and one synthesizes a final verdict.
-
-- Live demo: [ai-code-review-pipeline-production.up.railway.app](https://ai-code-review-pipeline-production.up.railway.app)
-- Reviewer + security agents run **concurrently** per file to reduce latency
-- Streams live progress to the UI via Server-Sent Events
-- Paste any public GitHub PR URL and get a full review in ~30 seconds
+**Contact:** wheelergarciaa@gmail.com
 
 ---
 
-**[AI Accessibility Audit Tool](https://github.com/Alex-Garcia-G/accessibility-audit-tool)** *(in development)* — A full-stack web app that audits any URL or HTML file for WCAG accessibility violations and returns a scored report with AI-generated code fixes.
+## Projects
 
-- Four-agent Claude pipeline: Scanner → Auditor → Severity → Reporter
-- React 18 + TypeScript frontend with Tailwind CSS
-- Node.js + Express + Prisma + PostgreSQL backend
-- GitHub OAuth authentication + per-user audit history
-- Architecture mirrors production standards: typed end-to-end, Dockerized DB, Railway deployment target
+### [Accessibility Audit Tool](https://github.com/Alex-Garcia-G/accessibility-audit-tool) — [Live Demo](https://accessibility-audit-tool-production.up.railway.app)
 
----
+AI-powered WCAG 2.1 accessibility auditor. Submit a URL or HTML file, watch four Claude agents run in sequence, and receive a scored report (0–100) with prioritized violations and AI-generated code fixes.
 
-## Skills
-
-- **Languages:** JavaScript, TypeScript, Node.js, HTML/CSS
-- **AI:** Anthropic Claude API, multi-agent orchestration, prompt engineering, SSE streaming
-- **Frontend:** React 18, Vite, Tailwind CSS
-- **Backend:** Express, REST APIs, Prisma ORM, PostgreSQL
-- **Infrastructure:** Railway, Docker, Git, GitHub OAuth
+**Pipeline:** Scanner → Auditor → Severity → Reporter (Claude Haiku + Sonnet)  
+**Stack:** React 18, Vite, TypeScript, Node.js, Express, PostgreSQL, Prisma, Railway  
+**Features:** GitHub OAuth, Server-Sent Events for live progress, Helmet CSP, prompt caching for ~80% latency reduction on the Auditor agent
 
 ---
 
-## What I'm looking for
+### [AI Code Review Pipeline](https://github.com/Alex-Garcia-G/ai-code-review-pipeline) — [Live Demo](https://ai-code-review-pipeline-production.up.railway.app)
 
-Junior software engineering roles — especially anything touching AI systems, developer tooling, or backend infrastructure. I think clearly about system design and I build things that actually work end-to-end.
+Multi-agent system that reviews GitHub pull requests using Claude. Four specialized agents coordinate in parallel: one plans the review, two analyze code simultaneously (logic + security), and one synthesizes a final verdict.
+
+**Stack:** Node.js, Express, TypeScript, Server-Sent Events, Railway  
+**Features:** ~30 second review time, live UI updates via SSE, parallel agent execution
 
 ---
 
-## Connect
+## Technical skills
 
-- **Email:** wheelergarciaa@gmail.com
-- **Live project:** [ai-code-review-pipeline-production.up.railway.app](https://ai-code-review-pipeline-production.up.railway.app)
+**Languages:** TypeScript, JavaScript, SQL  
+**Frontend:** React 18, Vite, Tailwind CSS  
+**Backend:** Node.js, Express, Prisma ORM, PostgreSQL  
+**AI:** Anthropic Claude API, multi-agent orchestration, prompt engineering, prompt caching, SSE streaming  
+**Infrastructure:** Docker, Railway, GitHub OAuth  
+**Tooling:** ESLint, Prettier, Husky, Zod
