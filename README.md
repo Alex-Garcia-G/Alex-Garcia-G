@@ -12,11 +12,14 @@ Currently seeking junior software engineering roles — particularly in AI syste
 
 ### [Accessibility Audit Tool](https://github.com/Alex-Garcia-G/accessibility-audit-tool) — [Live Demo](https://accessibility-audit-tool-production.up.railway.app)
 
+[![CI](https://github.com/Alex-Garcia-G/accessibility-audit-tool/actions/workflows/ci.yml/badge.svg)](https://github.com/Alex-Garcia-G/accessibility-audit-tool/actions/workflows/ci.yml)
+
 AI-powered WCAG 2.1 accessibility auditor. Submit a URL or HTML file, watch four Claude agents run in sequence, and receive a scored report (0–100) with prioritized violations and AI-generated code fixes.
 
 **Pipeline:** Scanner → Auditor → Severity → Reporter (Claude Haiku + Sonnet)  
 **Stack:** React 18, Vite, TypeScript, Node.js, Express, PostgreSQL, Prisma, Railway  
-**Features:** GitHub OAuth, Server-Sent Events for live progress, Helmet CSP, prompt caching for ~80% latency reduction on the Auditor agent
+**Features:** GitHub OAuth, SSE live progress, prompt caching (~80% latency reduction on the Auditor), score calculated deterministically in TypeScript (not by Claude), Prisma-backed session store (sessions survive restarts), SSRF protection via DNS resolution, per-user rate limiting, React error boundary  
+**Tests:** Vitest suite — score algorithm unit tests + pipeline integration tests with mocked agents; GitHub Actions CI on every push
 
 ---
 
@@ -35,5 +38,5 @@ Multi-agent system that reviews GitHub pull requests using Claude. Four speciali
 **Frontend:** React 18, Vite, Tailwind CSS  
 **Backend:** Node.js, Express, Prisma ORM, PostgreSQL  
 **AI:** Anthropic Claude API, multi-agent orchestration, prompt engineering, prompt caching, SSE streaming  
-**Infrastructure:** Docker, Railway, GitHub OAuth  
-**Tooling:** ESLint, Prettier, Husky, Zod
+**Infrastructure:** Docker, Railway, GitHub Actions CI/CD, GitHub OAuth  
+**Tooling:** Vitest, ESLint, Prettier, Husky, Zod
